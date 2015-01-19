@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>BootMii IOS Loader</name>
+	<coder>Karen Tsai (angelXwind)</coder>
+	<version>1.0</version>
+	<release_date>2015/01/18</release_date>
+	<short_description>A simple BootMii IOS loader.</short_description> 
+	<long_description>A simple app that loads BootMii IOS, given that it is installed as IOS254.</long_description>
+</app>
