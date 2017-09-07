@@ -102,16 +102,16 @@ $(BUILD):
 #---------------------------------------------------------------------------------
 clean:
 	@echo clean ...
-	@rm -fr $(BUILD) $(OUTPUT).elf $(OUTPUT).dol $(TARGET).zip apps/
+	@rm -frv $(BUILD) $(OUTPUT).elf $(OUTPUT).dol $(TARGET).zip apps/
 
 #---------------------------------------------------------------------------------
 
 package:
 	@make
 	@mkdir -p apps/$(TARGET)
-	@cp $(OUTPUT).dol apps/$(TARGET)/main.dol
-	@cp meta.xml apps/$(TARGET)/meta.xml
-	@cp icon.png apps/$(TARGET)/icon.png
+	@cp -v $(OUTPUT).dol apps/$(TARGET)/boot.dol
+	@cp -v meta.xml apps/$(TARGET)/meta.xml
+	@cp -v icon.png apps/$(TARGET)/icon.png
 	@zip -9 -r $(TARGET).zip apps/
 
 #---------------------------------------------------------------------------------
